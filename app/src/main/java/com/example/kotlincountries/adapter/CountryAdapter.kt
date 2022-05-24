@@ -22,10 +22,6 @@ class CountryAdapter(val countryList: ArrayList<Country>):RecyclerView.Adapter<C
     override fun onBindViewHolder(holder: CountryViewHolder, position: Int) { //kodda en son burayı yaptık . Diğerleri adapterü bağlama işiydi.
         holder.view.name.text = countryList[position].countryName
         holder.view.region.text = countryList[position].countryRegion
-
-
-
-
     }
 
     override fun getItemCount(): Int { //kaç tane row olusturacaksın?

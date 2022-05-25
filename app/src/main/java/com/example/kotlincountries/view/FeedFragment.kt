@@ -40,7 +40,7 @@ class FeedFragment : Fragment() {
         observeLiveData()
 
     }
-    fun observeLiveData() { //aşağıda observe yazınca life cycle owner ın kim old nu soracak , owner this yani bu fragment . observer lambda gösterimi isticek.
+    private fun observeLiveData() { //aşağıda observe yazınca life cycle owner ın kim old nu soracak , owner this yani bu fragment . observer lambda gösterimi isticek.
         viewModel.countries.observe(viewLifecycleOwner, Observer { countries ->
             //mesela burada countries i observelemek istedik . neyi istersek onu gözlemleyebiliriz.
             countries?.let {
